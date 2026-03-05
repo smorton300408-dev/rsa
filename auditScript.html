@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audit Call Script - Summer Sales Hub</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>Audit Call Script</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="calendar.html">Calendar</a>
+    <a href="scriptPlayer.html">First Call Script</a>
+    <a href="prices.html">Pricing</a>
+  </nav>
+</header>
+
+<main>
+  <button id="startAuditBtn">📞 Start Audit Call</button>
+  
+  <div id="auditScriptContainer" style="display:none;">
+    <div id="auditStep"></div>
+    <textarea id="customerReply" placeholder="Type customer reply here..."></textarea>
+    <button id="generateReply">AI Suggest Reply</button>
+    <div id="aiReply"></div>
+    <button id="nextStep">Next Step</button>
+  </div>
+</main>
+
+<script src="js/aiHelper.js"></script>
+<script src="js/auditScript.js"></script>
+</body>
+</html>
